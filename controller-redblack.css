@@ -1,61 +1,24 @@
 body {
-  background: transparent;
+  background: transparent !important;
 }
 
-.controller {
-  filter: drop-shadow(0 0 8px #550000);
-}
-
-/* General controller parts */
 .controller svg path {
-  fill: #8b0000;
-  stroke: #000000;
-  stroke-width: 0.5px;
+  fill: #8b0000 !important; /* Dark red base */
+  stroke: #000000 !important; /* Black outline */
+  stroke-width: 0.5px !important;
 }
 
-/* Pressed button highlight */
+/* Make pressed buttons turn black */
 .controller .pressed {
   fill: #000000 !important;
 }
 
-/* Sticks */
-.controller #L3, 
-.controller #R3 {
-  fill: #111111;
-  stroke: #000000;
-}
-
-/* D-Pad */
-.controller #DU,
-.controller #DD,
-.controller #DL,
-.controller #DR {
-  fill: #222222;
-  stroke: #000000;
-}
-
-/* Face Buttons */
-.controller #A,
-.controller #B,
-.controller #X,
-.controller #Y {
-  fill: #550000;
-  stroke: #000000;
-}
-
-/* Triggers and bumpers */
+/* Make sticks & triggers slightly different shade */
+.controller #L3,
+.controller #R3,
 .controller #LT,
 .controller #RT,
 .controller #LB,
 .controller #RB {
-  fill: #660000;
-  stroke: #000000;
-}
-
-/* Center buttons */
-.controller #BACK,
-.controller #START,
-.controller #GUIDE {
-  fill: #330000;
-  stroke: #000000;
+  fill: #550000 !important;
 }
